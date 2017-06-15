@@ -1,17 +1,19 @@
 resources:
-- name: hello-trigger-git
+- name: hello-trigger
   type: git
   source: 
-    uri:  https://github.com/beniwal-devika/Concourse/edit/master/
+    uri:  https://github.com/beniwal-devika/Concourse/blob/master.git
 
 
 jobs:
-- name: hello-trigger
+- name: job say hello
   public: true
-  serial: true
   plan: 
-    - get: hello-trigger-git
+    - get: hello-trigger
     - task: Hello trigger example
-      file: hello-trigger-git/hello.yml
+      file: hello-trigger/hello.yml
+
+
+
 
 
