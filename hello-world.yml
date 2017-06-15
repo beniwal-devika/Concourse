@@ -2,7 +2,8 @@ resources:
 - name: hello-trigger
   type: git
   source: 
-    uri:  https://github.com/beniwal-devika/Concourse/blob/master.git
+    uri:  https://github.com/beniwal-devika/Concourse.git
+    branch: master
 
 
 jobs:
