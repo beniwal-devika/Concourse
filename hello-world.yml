@@ -1,0 +1,17 @@
+resources:
+- name: hello-trigger-git
+  type: git
+  source: 
+    uri:  https://github.com/beniwal-devika/LearnConcourseCI/projects/1
+
+
+jobs:
+- name: hello-trigger
+  public: true
+  serial: true
+  plan: 
+    - get: hello-trigger-git
+    - task: Hello trigger example
+      file: hello-trigger-git/Project1/hello.yml
+
+
