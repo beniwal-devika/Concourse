@@ -2,7 +2,7 @@ resources:
 - name: hello-trigger-git
   type: git
   source: 
-    uri:  https://github.com/beniwal-devika/LearnConcourseCI/projects/1
+    uri:  https://github.com/beniwal-devika/Concourse/edit/master/
 
 
 jobs:
@@ -12,6 +12,6 @@ jobs:
   plan: 
     - get: hello-trigger-git
     - task: Hello trigger example
-      file: hello-trigger-git/Project1/hello.yml
+      file: hello-trigger-git/hello.yml
 
 
