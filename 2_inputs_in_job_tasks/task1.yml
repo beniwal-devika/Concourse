@@ -1,0 +1,17 @@
+#Main pipeine uses an 2 input files. One would know how to run test
+#cases and another on containing application code  
+
+platform: linux
+
+image_resource:
+  type: docker image
+  source: {respository: golang, tag: 1.6-alpine}
+
+
+inputs:
+- name: res1
+- name: res2
+  path: gopath/src/github.com/cloudfoundry-community/simple-go-web-app
+/
+run:
+ path: res1/2_inputs_in_job_tasks/task2.sh
