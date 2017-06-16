@@ -4,7 +4,7 @@
 platform: linux
 
 image_resource:
-  type: docker image
+  type: docker-image
   source: {respository: golang, tag: 1.6-alpine}
 
 
