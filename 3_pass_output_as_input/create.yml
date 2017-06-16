@@ -10,6 +10,6 @@ outputs:
 - name: some_files
 
 run:
-  path: res1/3_pass_output_as_input/create.yml
+  path: res1/3_pass_output_as_input/create.sh
 
 
