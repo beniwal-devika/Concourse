@@ -1,0 +1,19 @@
+resources:
+- name: res1
+  type: git
+  source:
+    uri: https://github.com/beniwal-devika/Concourse.git
+    branch: master
+
+
+jobs:
+- name: run create file
+  public: true
+  plan:
+  - get: res1
+  - get: res2
+  - task:
+    file: res1/3_pass_output_as_input/create.yml
+  - task:
+    file: res1/3_pass_output_as_input/show.yml
+

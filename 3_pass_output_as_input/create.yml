@@ -1,0 +1,15 @@
+platform: linux
+image_resource:
+  type: docker-image
+  source: {repository: alpine}
+
+inputs:
+- name : res1
+
+outputs:
+- name: some_files
+
+run:
+  path: res1/3_pass_output_as_input/create.yml
+
+
