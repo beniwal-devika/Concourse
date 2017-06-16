@@ -8,4 +8,4 @@ inputs:
 - name: some_files
 
 run:
-  path: res1/3_pass_output_as_input/show.yml
+  path: res1/3_pass_output_as_input/show.sh
