@@ -14,4 +14,4 @@ inputs:
   path: gopath/src/github.com/cloudfoundry-community/simple-go-web-app/
 
 run:
- path: res1/2_inputs_in_job_tasks/task2.sh
+  path: res1/2_inputs_in_job_tasks/task2.sh
