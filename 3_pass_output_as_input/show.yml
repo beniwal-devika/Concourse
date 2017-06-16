@@ -4,7 +4,7 @@ image_resource:
   source: {repository: alpine}
 
 inputs:
-- name : res1
+- name: res1
 - name: some_files
 
 run:
