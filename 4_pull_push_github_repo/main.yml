@@ -1,0 +1,78 @@
+resources:
+- name: res
+  type: git
+  source: 
+   uri: https://github.com/beniwal-devika/Concourse.git
+- name: res-gist
+  type: git
+  source:
+   uri: git@gist.github.com:a6926dc0ed3e47302d85b1885eccc622.git
+   branch: master
+   private_key: |
+     -----BEGIN RSA PRIVATE KEY-----
+      Proc-Type: 4,ENCRYPTED
+      DEK-Info: AES-128-CBC,C9D672D0437E583FCFF78DF8FB46124E
+
+      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
+      -----END RSA PRIVATE KEY-----
+
+
+
+jobs:
+- name: Pull and push github repo to remote location
+  serial: true
+  plan: 
+  - get: res
+  - get: res-gist
+  - task: Intermediate file
+    file: res/4_pull_push_github_repo/intermediate.yml
+  - put: res-gist
+    params: {repository: updated-gist}
