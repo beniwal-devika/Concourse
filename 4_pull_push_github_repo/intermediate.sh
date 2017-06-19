@@ -14,7 +14,7 @@ git config --global user.email "dbeniwal1@hawk.iit.edu"
 git config --global user.name "beniwal-devika"
 
 
-git add
+git add .
 git commit -m "Bumped Date"
 
 
